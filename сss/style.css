@@ -44,14 +44,18 @@ body{
 }
 .contacts-link-type{
     font-weight: 700;
-    color: #ffffff;
+    color: #ff6b08;
     font-size: 14px;
     margin-right: 10px;
+    
 }
 .contacts-link{
     opacity: 0.5;
-    color: #ffffff;
+    color: #e4e2e2;
     font-weight: 400;
+}
+.clr-num-mail{
+    color:#f5f7fa;
 }
 /* Hard and Soft skills */
 .skill-title{
@@ -158,7 +162,7 @@ body{
 }
 
 .work-date{
-    color:#28ac3e;
+    color:#109426;
     font-size: 12px;
     font-weight: 400;
     margin-top: 15px;
