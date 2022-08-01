@@ -4,364 +4,2483 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My resume</title>
-    <link rel="stylesheet" href="./сss/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="js/jquery.responsive-dom.js"></script>
+    <title>Rezume</title>
+    <style>
+        .modal {
+            display: none;
+        }
+        
+        
+    </style>
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="./css/index.css" rel="stylesheet">
+    <!--
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/choices.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    -->
+
 </head>
 
-<body>
- <frameset>
-   <frame src="content.html" name="CONTENT">
- </frameset>
-        <!-- Main container -->
-        <div class="main-container">
-            <!-- Side container  -->
-            <aside class="sidebar-container">
-                <img class="my-photo"  src="https://i.ibb.co/B2S4mkG/photo-2022-04-14-18-10-20.jpg"  alt="my photo">
-                <!-- side container text -->
-                <div class="sidebar-container-text">
-                    <!-- contacts container -->
-                    <div class="contacts-container">
-                        <h3 class="contacts-title">►КОНТАКТИ</h3>
-                        <!-- telephune -->
-                        <div>
-                            <span class="contacts-link-type">C:
-                            <a class="contacts-link" href="tel:+380676363217"></a> 
-                            <a class="clr-num-mail"> +38 067 636 32 17</a>  </span> 
+<body class="align-items-stretch d-flex flex-column"
+    style="background:linear-gradient(to right, #A4D8DB, #75999C, #628082, #4D6466, #3B4E4F); ">
+    <!--Front Page-->
+    <section class="front-page">
+        <div class="container-sm position-relative ">
 
-                        </div>
-                        <!-- Email -->
-                        <div>
-                            <span class="contacts-link-type">E:
-                            <a class="contacts-link" href="mailto:ugovas87@gmail.com"> </a>
-                            <a class="clr-num-mail">ugovas87@gmail.com</a> 
-                        </span> 
-                        </div>
+            <nav class="navbar p-0 navbar-expand-sm navbar-light  top-0 ">
+                <!--Container-wrapper-->
+                <div class="container-fluid  bg-gradient mx-5" >
+                    <button class="navbar-toggler collapsed position-relative start-100 translate-middle-x" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-expanded="false" aria-label="Toggle navigation">
                         
-                    </div>
-                    <!-- Tech skills container -->
-                    <div class="skill-container">
-                        <h3 class="skill-title" >мої досягнення та досвід</h3>
-                        <ul class="skills-item-list">
-                            <li >
-                                <span class="skill-text">HTML5</span>
+                        <!--NavBarBrand-->
+                        <a class="navbar-brand " href="#">
+                            <i class="fas fa-bars"></i>
+                            <img src="./logo/гла12.png" alt="Svetlana"
+                                height="70" class="rounded">
+                                
+                        </a>
+                    </button>
+
+
+
+
+
+                    <!-- Collapsible wrapper -->
+                    <div class="navbar-collapse collapse " id="navbarSupportedContent">
+                        <!--NavBarBrand-->
+                        <a class="navbar-brand d-none d-sm-block" href="#">
+                            <img src="./logo/гла12.png" alt="Svetlana"
+                                height="70" class="rounded">
+                        </a>
+                        <!--Links-->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0"
+                            style="background: linear-gradient(to up, #dcdfdf , black);">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">►ПРО МЕНЕ</a>
                             </li>
-                            <li >
-                                <span class="skill-text">CSS</span></li>
-                            <li >
-                                <span class="skill-text">Photoshop</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">►ПРОЕКТИ</a>
                             </li>
-                            <li >
-                                <span class="skill-text">Corel Draw</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacts-inform">►КОНТАКТИ</a>
                             </li>
-                            <li >
-                                <span class="skill-text">Компьютерна графіка</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./print_rezume/index.html">►РЕЗЮМЕ</a>
                             </li>
-                            <li >
-                                <span class="skill-text">MS Of</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#videos">►ВiДЕО</a>
                             </li>
-                            <li >
-                                <span class="skill-text">Українська мова</span>
-                            </li>
-                            <li >
-                                <span class="skill-text">Російська мова</span>
-                            </li>
-                            
-                            <li >
-                                <span class="skill-text">Англійська - A.2.1</span>
-                            </li>
-                            
-                            
-                            
-                            
                         </ul>
                     </div>
-                    <!-- Soft skills container -->
-                    <div class="skill-container">
-                        <h3 class="skill-title">ПРО МЕНЕ:</h3>
-                        <ul class="skills-item-list">
-                            <li >
-                                <span class="skill-text">Головний художник</span>
-                            </li>
-                            
-                            <li >
-                                <span class="skill-text">Художник постановник</span>
-                            </li>
-                            <li >
-                                <span class="skill-text">Художник - педагог</span>
-                            </li>
-                            <li >
-                                <span class="skill-text">Художник по костюмах</span>
-                            </li>
-                            <li >
-                                <span class="skill-text">Художник оформлювач</span>
-                            </li>
-                            
-                            
-                            
-                           
-                        </ul>
-                    </div>
+
                 </div>
-            </aside>
+            </nav>
             
-
-
-            <!-- about me container -->
+           
             
-            <div class="about-me-container">
-                <!-- About me main info -->
-                <div class="main-info">
-                    <h2 class="profession">{ХУДОЖНИК💛💙}</h2>
-                    <h1 class="name">SVITLANA_TSYVANONOK <br>
-                    💛💙<br>
-                    СВІТЛАНА ЦИВАНЬОНОК <br> (ЮГОВА)</h1>
+                <div class="front-page-wrapper">
+                    <div class="text-end p-0 d-flex flex-column flex-md-row-reverse justify-content-center">
+                        <div class="front-page-main-info text-center p-0" style="color: #A4D8DB;">
+                            <img src="./print_rezume/img/sveta.jpg" alt="" class="front-page-my-photo desktop-element"
+                                data-aos="fade-down" data-aos-delay="1000" style="width: 140px; height:auto">
+                            <p class="fs-2 text-center">Свiтлана Югова</p>
 
-                    <p class="about-me-text"> *Mоя мета створення ескізів костюмів для вистав та розвиток у творчих та цифрових напрямках
-                        , які у наш вік стали невід'ємно пов'язаними.
+                            <p class="fs-2 text-center" style="color:#A4D8DB">
+                                _{Designer_Artist}
+                            </p>
+
+                            <button type="button" class="btn btn-info" style="background: #3B4E4F;">
+                                <a href="#projects" class="front-page-gallery-btn accent-btn text-white">подивіться мої
+                                    проекти
+                                </a>
+                            </button>
+                        </div>
+
+                        <p class="fs-3  p-0 text-break text-xl-center" style="color:#dcdfdf;">
+                            Mоя мета створення ескізів,<br>
+                            костюмів для вистав
+                            та розвиток у творчих<br>
+                            та цифрових напрямках
+                            ,які у наш вік<br>
+                            стали невід'ємно пов'язаними.
+                        </p>
+
+
+                    </div>
+
+                    <div class="front-page-my-info">
+                        <!--<img src="./print_rezume/img/sveta.jpg" alt="" class="front-page-my-photo mobile-element tablet-element">
+                    <div class="front-page-about-me-container "  data-aos="fade-left" data-aos-delay="1500">
+                        <p class="front-page-my-descr mobile-element"></p>
+                        <p class="front-page-my-descr tablet-element desktop-element">мій <br> веб сайт</p>-->
+
+                    </div>
+
+                </div>
+
+
+                <img src="" alt="" class="front-page-laptop" data-aos-delay="500">
+
+                <div class="expirience-wrapper w-50 text-center position-relative  start-50 translate-middle-x" data-aos="fade-right" data-aos-delay="500">
+                    <div class="expirience-container p-0">
+                        <p class="fs-2 text-center" style="color:#A4D8DB">
+                            Мої досягнення та досвід
+                        </p>
+                        <div class="d-md-flex justify-content-between">
+                            <div class="expirience-text text-center" style="color: black;">Photoshop </div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item  text-black ">
+                                    <div class="expirience-dots text">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;;"> </i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-between">
+                            <div class="expirience-text text-center" style="color: black"> Corel Draw</div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item text-black">
+                                    <div class="expirience-dots">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-between">
+                            <div class="expirience-text text-center" style="color: black;"> Компьютерна графіка</div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item text-black">
+                                    <div class="expirience-dots">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-between">
+                            <div class="expirience-text text-center" style="color: black;">MS Of</div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item text-black">
+                                    <div class="expirience-dots">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+
+                                        <i class="expirients-dots-item far fa-circle "></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-between">
+                            <div class="expirience-text text-center" style="color: black;">Українська мова</div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item text-black">
+                                    <div class="expirience-dots">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-md-flex justify-content-between">
+
+                            <div class="expirience-text text-center" style="color: black;">Російська мова</div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item text-black">
+                                    <div class="expirience-dots">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle "></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-md-flex justify-content-between">
+                            <div class="expirience-text text-center" style="color: black;">Англійська - Elementary A.1
+                            </div>
+                            <div class="expirience-skills text-white">
+                                <div class="expirience-skills-item text-black">
+                                    <div class="expirience-dots">
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"
+                                            style="color: black;"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle expirience-dots-item-accent"></i>
+                                        <i class="expirients-dots-item far fa-circle "></i>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            
+        </div>
+        
+
+    </section>
+    <!--About-->
+    <section class="about d-md-flex" id="about">
+        <div class="container container-left" >
+            <div class="about-content-wrapper ">
+                <p class="fs-2 text-center" style="color: #A4D8DB;" data-aos="fade-right"
+                    data-aos-delay="500"> Більше про мій досвід:</p>
+
+                <p class="about-descr mobile-element text-white text-center ">
+
+
+
+
+                <div class="d-grid gap-2 d-md-block" >
+                    <a href="#btn-1" class="btn my-btn btn-primary border-3 rounded m-1"  aria-current="page">
+                        Головний
+                        художник</a>
+                    
+                    <a href="#btn-2" class="btn my-btn btn-primary border-3 rounded m-1 " >Художник по костюмах</a>
+                    <a href="#btn-3" class="btn my-btn btn-primary border-3 rounded m-1" >Художник постановник</a>
+                    <a href="#btn-4" class="btn my-btn btn-primary border-3 rounded m-1" >Художник оформлювач</a>
+                    <a href="#btn-5" class="btn my-btn btn-primary border-3 rounded m-1" >Участь у конкурсах</a>
+                </div>
+
+                
+
+               
+                <div class="about-img">
+                    <p class="about-img-text">
+
+                        <img src="" alt="" class="" />
                     </p>
                 </div>
-                <div class="about-me-move-down">
-                    <!-- Projects container -->
-                    <div class="project-container">
-                        <h3 class="about-me-headers">Власнi проэкти:</h3>
+                <div  id="btn-1">
+                    <p class="title-text  text-white  fs-2">Головний художник<br></p>
+                    <p class="about-text1 text-black fs-4" data-aos="fade-right" data-aos-delay="500" >
                         
-                        <ol class="project-list">
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="https://drive.google.com/drive/folders/1OTXEp4-OIEuRPbBCFmymI3BkBdgqMBKU?usp=sharing" target="_blank"> <span class="project-list-points"> МОЇ РОБОТИ                                    : </span></a>
-                                
-                                [ <span class="project-list-types">(ВИКОНАНО ЗА ДОПОМОГОЮ PS)</span> ]
-                            </li>
+                        Театр Драми та Комедії<br>
+                        12.2020 - Теперішній час<br>
+                        Дніпро<br>
+                        Розробка принципів художньої постановки спектаклю<br>
+                        Ідейно художній рівень вистав, інтерьеру театру,<br>
+                        реклами та тематичних виставок;<br>
+                        Участь в оформленні усіх постановок, декорацій<br>
+                        та костюмів;<br>
+                        Створення ескізів костюмів для вистав;<br>
+                        Участь у підборі кадрів;<br>
+                        Участь у підборі та закупівлі матеріалів
 
-                            
+                    </p>
+                </div>
+               
+                <div  id="btn-2">
+                    <p class="title-text  text-white  fs-2"> Художник по костюмах<br></p>
+                    <p class="about-text2 text-black fs-4" data-aos="fade-right" data-aos-delay="500" >
+                       
+                        Театр Драми та Комедії<br>
+                        10.2006 - 12.2020<br>
+                        Дніпро<br>
+                        Створення ескізів костюмів для вистав;<br>
+                        Контроль за виготовленням костюмів;<br>
+                        Участь у підборі та закупівлі матеріалу.
+                    </p>
+                </div>
+               
+                <div  id="btn-3">
+                    <p class="title-text  text-white  fs-2"> Художник постановник<br></p>
+                    <p class="about-text text-black fs-4" data-aos="fade-right" data-aos-delay="500">
+                        
+                        Театр Російської Драми<br>
+                        07.1993 - 01.1998<br>
+                        Казахстан<br>
+                        Створення ескізів костюмів та сценографії
+                    </p>
 
-                            
+                </div>
 
-                            
-                            
-                        </ol>
-                    
+                <div  id="btn-4">
+                    <p class="title-text  text-white  fs-2"> Художник оформлювач<br></p>
+                    <p class="about-text  text-black fs-4" data-aos="fade-right" data-aos-delay="500">
+                        
+                        1989 - 1993<br>
+                        Малюнок;<br>
+                        Живопис;<br>
+                        Композиція;<br>
+                        Скульптура;<br>
+                        Креслення;<br>
+                        Промислова графіка;<br>
+                        Шрифти;<br>
+                        Робота з керамікою;<br>
+                        Перспектива.
+                    </p>
+
+                </div>
+
+
+                <div  id="btn-5">
+
+                    <p class="title-text  text-white  fs-2">Участь у конкурсах та фестивалях<br></p>
+                    <p class="about-text  text-black fs-4" data-aos="fade-right" data-aos-delay="500">
+                        Участь у конкурсах та фестивалях театрального<br>
+                        мистецтва:<br>
+                        ГРА;<br>
+                        Січеславна;<br>
+                        Міжнародний конкур моновистав (Монголія).<br>
+                        Участь у створені понад 70 вистав, у якості<br>
+                        художника по костюмам та сценографа
+                    </p>
+
+
+                </div>
+            </div>
+            
+    </section>
+    <!--Projects-->
+    <section class="personal-projects d-md-flex" id="projects">
+        <div class="container">
+            <h3 class="section-title personal-projects-title text-center fs-2" data-aos="fade-up" style="color: #A4D8DB;"
+                data-aos-anchor-placement="top-center">Мої проекти <br>Перегляньте малюнки та фото</h3>
+            <div class="personal-project-item-wrapper">
+
+                <!--Modal BTN-->
+                <div class="d-flex ">
+                    <!-- Button trigger modal -->
+                    <div class="d-grid gap-2 d-md-block position-relative  start-50 translate-middle-x" >
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="exampleModalIndicatorsLabel">
+                            <p class="text-white">Красуня та чудовисько (Театр Оперы)</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal"
+                         data-bs-target="#exampleModalIndicators2">
+                            <p class="text-white">Щоденник негiдника</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators3">
+                            <p class="text-white">Love code </p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators4">
+                            <p class="text-white">ФАРШ </p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal"
+                         data-bs-target="#exampleModalIndicators5">
+                            <p class="text-white">Вишневий сад</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators6">
+                            <p class="text-white">Aрт постери</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators7">
+                            <p class="text-white">графіка</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators8">
+                            <p class="text-white">Ляльковий театр</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators9">
+                            <p class="text-white">Барвінок</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators10">
+                            <p class="text-white">замарашка</p>
+                        </button>
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" 
+                        data-bs-target="#exampleModalIndicators11">
+                            <p class="text-white">Красуня та чудовисько ДРАМіКОМ</p>
+                        </button>
+
                     </div>
-                    <!-- ABOUT ME experience container -->
-                    <div class="work-experience">
-                        <h3 class="about-me-headers">Більше про мій 20-ти лiтнiй досвід::</h3>
-                        <!-- first ABOT ME -->
-                        <div >
-                            <h4 class="working-position">
-                                ПОСАДА ТА ВМIННЯ: Головний ХУДОЖНИК<br>
+
+
+                    
+                </div>
+                <!--Modals proj1-->
+
+                <div class="modal fade" id="exampleModalIndicators" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalIndicatorsLabel">Красуня та чудовисько (Театр Оперы)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body bg-dark">
+                                <!--Project1-->
+                                <div id="carouselExampleModalIndicators5" class="carousel slide " data-bs-ride="carousel">
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="16" aria-label="Slide 17"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="17" aria-label="Slide 18"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="18" aria-label="Slide 19"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="19" aria-label="Slide 20"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="19" aria-label="Slide 21"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="20" aria-label="Slide 22"></button>
+                                            <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="21" aria-label="Slide 23"></button>
+                                        </div>
+                                        <div class="carousel-inner container">
+                                            <div class="carousel-item active">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2919.jpg"
+                                                    class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2919.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2926.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2926.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2962.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2962.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2974.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/_02A2974.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/dog.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/dog.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/dvoreski.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/dvoreski.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/gornich.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/gornich.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/mon3.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/mon3.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/monc chema2==.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/monc chema2==.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/osel.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/osel.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/povar.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/povar.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/бель23 06 чб.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/бель23 06 чб.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/отещ чб.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="/кр и чу оп/кр и чу оп/отещ чб.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/пастух.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/пастух.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/приврат1.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/приврат1.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/ф 6 чбcolor.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/ф 6 чбcolor.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/фе15.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/фе15.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/хим нов.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/хим нов.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/химеры2506.чб2.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/химеры2506.чб2.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/чу10 06.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/чу10 06.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/чудо посл хвост.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/чудо посл хвост.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <img src="./кр и чу оп/кр и чу оп/эеленщ.jpg"
+                                                    class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                                    alt="...">
+                                                <img src="./кр и чу оп/кр и чу оп/эеленщ.jpg"
+                                                    class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                            </div>
+
+                                              
+                                        </div>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                          </button>
+                                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                          </button>  
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                       
+                                    </div>
+                                        
+                            </div> 
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+        <!--Project2-->
+
+        <div class="modal fade" id="exampleModalIndicators2" tabindex="-1" aria-labelledby="exampleModalIndicatorslLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorslLabel2">Щоденник негiдника </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!-------------------------------------------------project2-->
+                        <div id="carouselExampleModalIndicators2" class="carousel slide" data-bs-ride="carousel2">
+                            <div class="carousel-indicators">
+                                
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                            </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./щеденник/щеденник/3.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/3.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/kleo2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/kleo2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/kurhaev.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/kurhaev.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/nanefa.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/nanefa.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/prizivalka.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/prizivalka.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/turusina2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/turusina2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/изображение_viber_2021-10-24_21-04-06-803.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/изображение_viber_2021-10-24_21-04-06-803.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/изображение_viber_2021-10-31_15-32-06-258.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/изображение_viber_2021-10-31_15-32-06-258.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/изображение_viber_2021-10-31_15-39-22-946.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/изображение_viber_2021-10-31_15-39-22-946.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/крут2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/крут2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/машаа2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/машаа2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./щеденник/щеденник/маща свадь2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./щеденник/щеденник/маща свадь2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                               
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleModalIndicators2" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Project3-->
+        <div class="modal fade" id="exampleModalIndicators3" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel3">Love code</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!-------------------------------------------------project3-->
+                        <div id="carouselExampleModalIndicators3" class="carousel slide" data-bs-ride="carousel3">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="/лав код/лав код/изображение_viber_2022-06-24_15-54-37-667.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="/лав код/лав код/изображение_viber_2022-06-24_15-54-37-667.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-24_15-55-53-248.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-24_15-55-53-248.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-24_15-55-55-460.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-24_15-55-55-460.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-23-33-465.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-23-33-465.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-33-54-808.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-33-54-808.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-33-54-947.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-33-54-947.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-33-56-911.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./лав код/лав код/изображение_viber_2022-06-27_22-33-56-911.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleModalIndicators3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Project4-->
+        <div class="modal fade" id="exampleModalIndicators4" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel4"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel4">ФАРШ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!-------------------------------------------------project4-->
+                        <div id="carouselExampleModalIndicators4" class="carousel slide" data-bs-ride="carousel4">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./фарш/фарш/photo_2022-07-11_12-02-57.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/photo_2022-07-11_12-02-57.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./фарш/фарш/photo_2022-07-11_12-03-18.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/photo_2022-07-11_12-03-18.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./фарш/фарш/гельбер2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/гельбер2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./фарш/фарш/изображение_viber_2021-09-09_23-03-13-243.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/изображение_viber_2021-09-09_23-03-13-243.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./фарш/фарш/изображение_viber_2022-06-24_16-16-01-811.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/изображение_viber_2022-06-24_16-16-01-811.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./фарш/фарш/пироженщик.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/пироженщик.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./фарш/фарш/рыцари.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./фарш/фарш/рыцари.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
                                 
 
-                            <span class="work-date">
-                                Театр Драми та Комедії<br>
-                                12.2020 - Теперішній час<br>
-                                Дніпро<br></span>
 
-                            <ul class="work-expirience-list">
-                                <li>
-                                    Розробка принципів художньої постановки спектаклю<br>
-                                </li>
-                                <li>
-                                    Ідейно художній рівень вистав, інтерьеру театру,<br>
-                                    реклами та тематичних виставок;<br>
-                                </li>
-                                <li>
-                                    Участь в оформленні усіх постановок, декорацій<br>
-                                     та костюмів;<br>
-                                </li>
 
-                                <li>
-                                    Створення ескізів костюмів для вистав;<br>
-                                    
-                                </li>
-                                    Участь у підборі кадрів;<br>
-                                <li>
-                                    Участь у підборі та закупівлі матеріалів
-                                </li>
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleModalIndicators4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-dark">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Project5-->
+        <div class="modal fade" id="exampleModalIndicators5" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel5"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel5">Вишневий сад</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!-------------------------------------------------project5-->
+
+
+
+                        <div id="carouselExampleModalIndicators5" class="carousel slide" data-bs-ride="carousel5">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                            </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./вишневый/photo_2022-07-11_12-03-28.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/photo_2022-07-11_12-03-28.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./вишневый/photo_2022-07-11_12-03-51.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/photo_2022-07-11_12-03-51.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./вишневый/гаев цв.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/гаев цв.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/дуняша испрр.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/дуняша испрр.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/изображение_viber_2022-06-24_16-16-02-807.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/изображение_viber_2022-06-24_16-16-02-807.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/изображение_viber_2022-06-24_16-16-03-249.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/изображение_viber_2022-06-24_16-16-03-249.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/изображение_viber_2022-06-27_22-23-35-037.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/изображение_viber_2022-06-27_22-23-35-037.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/раневскаяя.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/раневскаяя.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/фирс.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/фирс.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/щарлотта испра_.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/щарлотта испра_.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./вишневый/яша цв.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./вишневый/яша цв.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+
+                                </div>
+
+                                
+
+
+                                
+
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleModalIndicators5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Project6-->
+        <div class="modal fade" id="exampleModalIndicators6" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel6"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel6">Aрт постери</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--_____________________________________________proj6-->
+                        <div id="carouselExampleModalIndicators6" class="carousel slide" data-bs-ride="carousel6">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators6" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                            </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./арт постер/kasan1.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/kasan1.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./арт постер/tin.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/tin.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./арт постер/vishivanka.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/vishivanka.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./арт постер/гла1.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/гла1.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./арт постер/гла11.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/гла11.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <img src="./арт постер/изображение_viber_2022-06-18_14-05-03-231.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/изображение_viber_2022-06-18_14-05-03-231.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./арт постер/птах.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./арт постер/птах.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                               
+
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleModalIndicators6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleModalIndicators6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Project7-->
+        <div class="modal fade" id="exampleModalIndicators7" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel7"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel7">Графіка</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!--_____________________________________________proj7-->
+                        <div id="carouselExampleModalIndicators7" class="carousel slide" data-bs-ride="carousel7">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators7" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                              </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./графика/графика/photo_2022-07-11_12-06-13.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/photo_2022-07-11_12-06-13.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/photo_2022-07-11_12-06-29.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/photo_2022-07-11_12-06-29.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/photo_2022-07-11_12-06-35.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/photo_2022-07-11_12-06-35.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/photo_2022-07-11_12-07-05.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/photo_2022-07-11_12-07-05.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/изображение_viber_2022-06-04_12-53-46-286.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/изображение_viber_2022-06-04_12-53-46-286.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/изображение_viber_2022-06-04_12-53-46-457.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/изображение_viber_2022-06-04_12-53-46-457.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/изображение_viber_2022-06-04_12-53-46-595.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/изображение_viber_2022-06-04_12-53-46-595.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./графика/графика/изображение_viber_2022-07-11_16-47-46-901.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./графика/графика/изображение_viber_2022-07-11_16-47-46-901.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                               
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="carouselExampleModalIndicators7" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="carouselExampleModalIndicators7" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Project8-->
+        <div class="modal fade" id="exampleModalIndicators8" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel8"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel8">Ляльковий театр</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!--_____________________________________________proj8-->
+                        <div id="carouselExampleModalIndicators8" class="carousel slide" data-bs-ride="carousel8">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators8" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                              </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_12-07-15.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_12-07-15.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_12-07-42.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_12-07-42.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_12-07-55.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_12-07-55.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-02-57.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-02-57.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-08.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-08.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-24.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-24.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-37.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-37.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-50.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-50.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-56.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-03-56.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-04-20.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_15-04-20.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_23-27-52.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_23-27-52.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_23-28-27.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/photo_2022-07-11_23-28-27.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/изображение_viber_2022-07-05_16-49-44-052.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/изображение_viber_2022-07-05_16-49-44-052.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кукольн/кукольн/изображение_viber_2022-07-11_17-08-42-476.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кукольн/кукольн/изображение_viber_2022-07-11_17-08-42-476.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
 
                                
                                 
-				
-                                    
-                                
-                            </ul>
+
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleModalIndicators8" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleModalIndicators8" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                         <!-- 2 about me -->
-                         <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ:ХУДОЖНИК по костюмах <br>                                <span class="working-place"></span> </h4>
-
-                            
-
-
-                            <span class="work-date">у театрi Опери-та-Балету </span>
-                            <span class="work-date">2021-2022 </span>
-
-                            
-                                
-				
-                                    
-                                
-                            
-                        </div>
-                        <!--3 ABOUT ME-->
-                        <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ:ХУДОЖНИК по костюмах<span class="working-place"></span> </h4>
-
-                            <span class="work-date">
-                                Театр Драми та Комедії<br>
-                                10.2006 - 12.2020<br>
-                                Дніпро<br></span>
-
-                            <ul class="work-expirience-list">
-                                <li>
-                                    Створення ескізів костюмів для вистав;<br>
-                                </li>
-                                <li>
-                                    Контроль за виготовленням костюмів;<br>
-                                </li>
-                                <li>
-                                    Участь у підборі та закупівлі матеріалу.
-                                </li>
-                                
-				
-                                    
-                                
-                            </ul>
-                        </div>
-                        <!-- 4 about me -->
-                        <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ:ХУДОЖНИК-педагог<span class="working-place"></span> </h4>
-
-                            <span class="work-date">
-                                01.1998 - 10.2006<br>
-                                Дніпро<br>
-                                творчій педагог у дитячій студії "Анімаційної<br>
-                                педагогіки  SIMHA (ЕОЦ)"
-                                
-                                </span>
-
-                           
-                                
-				
-                                    
-                                
-                            
-                        </div>
-
-
-
-                        <!-- 5 about me -->
-                        <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ:ХУДОЖНИК-постановник <br>                                <span class="working-place"></span> </h4>
-
-                            <span class="work-date">
-                                2000-2018<br>
-                                у театрi Ляльок
-                                
-                            
-                            </span>
-                            
-
-
-                            
-
-                            
-                                
-				
-                                    
-                                
-                            
-                        </div>
-
-                        <!-- 6 about me -->
-                        <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ:ХУДОЖНИК-постановник <br>                                <span class="working-place"></span> </h4>
-
-                            <span class="work-date">
-                                2000-2022<br>
-                                у ТЕЛЕтеатрi
-                            </span>
-
-                            
-                                
-				
-                                    
-                                
-                            
-                        </div>
-
-
-                        <!-- 7 about me -->
-                        <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ:ХУДОЖНИК-постановник <span class="working-place"></span> </h4>
-
-                            <span class="work-date">
-                                1998-1999<br>
-                                в Молодіжному театрi
-                            </span>
-
-                            
-                                
-                            
-                        </div>
-
-                         <!-- 8 about me -->
-                         <div >
-                            <h4 class="working-position">ПОСАДА ТА ВМIННЯ: ХУДОЖНИК-постановник  <span class="working-place"></span> </h4>
-
-                            <span class="work-date">
-                                1993-1998<br>
-                                в театрi ДРАМИ В Казахстанi
-                            </span>
-
-                            
-                                
-                            
-                        </div>
-
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         
-
-
-
-
-                        
-                      
-
                     </div>
                 </div>
-            </div>   
-            
+            </div>
         </div>
-   
-    <script>
+        <!--Project9-->
+        <div class="modal fade" id="exampleModalIndicators9" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel9"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel9">Барвінок</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <!--_____________________________________________proj9-->
+                        <div id="carouselExampleModalIndicators9" class="carousel slide" data-bs-ride="carousel9">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators9" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators9" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators9" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./барвинок/photo_2022-07-11_15-07-32.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./барвинок/photo_2022-07-11_15-07-32.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./барвинок/изображение_viber_2022-07-11_16-47-46-729.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./барвинок/изображение_viber_2022-07-11_16-47-46-729.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./барвинок/изображение_viber_2022-07-11_16-47-46-827.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./барвинок/изображение_viber_2022-07-11_16-47-46-827.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                
+
+
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleModalIndicators9" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleModalIndicators9" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Project10-->
+        <div class="modal fade" id="exampleModalIndicators10" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel10"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel10">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <div id="carouselExampleModalIndicators10" class="carousel slide" data-bs-ride="carousel2">
+                            
+                                <div class="carousel-indicators">
+                                    <button type="button"  data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                    <button type="button" data-bs-target="#carouselExampleModalIndicators10" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                </div>
+
+                            
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./замарашка/замарашка/1.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/1.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/4.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/4.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/5.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/5.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/=====.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/=====.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/dir zam.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/dir zam.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/re2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/re2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/re3.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/re3.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/rez.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/rez.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/изображение_viber_2022-06-27_22-33-56-984.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/изображение_viber_2022-06-27_22-33-56-984.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/изображение_viber_2022-06-27_22-33-57-051.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/изображение_viber_2022-06-27_22-33-57-051.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/изображение_viber_2022-06-27_22-33-57-138.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/изображение_viber_2022-06-27_22-33-57-138.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./замарашка/замарашка/щесть.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./замарашка/замарашка/щесть.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                               
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleModalIndicators10" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleModalIndicators10" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Project11-->
+        <div class="modal fade" id="exampleModalIndicators11" tabindex="-1" aria-labelledby="exampleModalIndicatorsLabel11"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalIndicatorsLabel11">Красуня и чудовисько ДРАМіКОМ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <div id="carouselExampleModalIndicators11" class="carousel slide" data-bs-ride="carousel2">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselExampleModalIndicators11" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                              </div>
+                            <div class="carousel-inner container">
+                                <div class="carousel-item active">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/volsh1 2цв.jpg"
+                                        class="d-none d-lg-block  w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/volsh1 2цв.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/забияка.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/забияка.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/изображение_viber_2022-06-27_22-14-05-302.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/изображение_viber_2022-06-27_22-14-05-302.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/изображение_viber_2022-06-27_22-14-05-386.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/изображение_viber_2022-06-27_22-14-05-386.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/капит.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/капит.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/капитан.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/капитан.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/красавица сестры.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/красавица сестры.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/купец.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/купец.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/тупой2.jpg"
+                                        class="d-none d-lg-block w-50 position-relative translate-middle-x start-50 "
+                                        alt="...">
+                                    <img src="./кр и чу др и ко/кр и чу др и ко/тупой2.jpg"
+                                        class="d-xxl-none d-xl-none d-lg-none w-100" alt="...">
+                                </div>
+
+                                
+
+                                
+
+                                
+
+
+
+
+                               
+
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleModalIndicators11" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleModalIndicators11" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Video content-->
+    <section class="personal-video d-md-flex" id="videos">
+        <div class="container">
+            <h3 class="section-title text-center text-center fs-2" data-aos="fade-up" data-aos-anchor-placement="top-center"
+                style="color: #A4D8DB">Подивіться відео моїх проектів</h3>
+            <div class="personal-video-item-wrapper">
+                <!--Modal Btn-->
+                <div class="d-flex">
+                    <!--Btn Trigger Modal-->
+                    <div class="d-grid gap-2 d-md-block position-relative  start-50 translate-middle-x">
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals1">
+                            <p class="text-white">Лiсова пiсня</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals2">
+                            <p class="text-white">Коза дереза</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals3">
+                            <p class="text-white">Чарівні Мандри</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals4">
+                            <p class="text-white">Festiwal teatrów</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals5">
+                            <p class="text-white">Лiсова пiсня Персонажi</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals6">
+                            <p class="text-white">Барвінок</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals7">
+                            <p class="text-white">ФАРШ</p>
+                        </button>
+
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals8">
+                            <p class="text-white">Mюзикл</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals9">
+                            <p class="text-white">Красавица и Чудовище</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals10">
+                            <p class="text-white">Мюзикл “Красуня та чудовисько” </p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals11">
+                            <p class="text-white">СПЕЦПРОЄКТ</p>
+                        </button>
+
+                        <button type="button" class="btn my-btn btn-primary border-3 rounded m-1" data-bs-toggle="modal" data-bs-target="#exampleModals12">
+                            <p class="text-white">Тизер до вистави | ДРАМіКОМ</p>
+                        </button>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Modal-Video -->
+    <!--Video modal 1-->
+    <div class="modal fade" id="exampleModals1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals1Label">Лiсова пiсня</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SfKS3dkAaKc?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Video modal 2-->
+    <div class="modal fade" id="exampleModals2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals2Label">Коза дереза</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-69btnmkg7k?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Video modal 3-->
+    <div class="modal fade" id="exampleModals3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals3Label">Чарівні Мандри</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/1yvOmeGwg38?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 4-->
+    <div class="modal fade" id="exampleModals4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals4Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals4Label">Festiwal teatrów lalkowych w Gminie Pruszcz Gdański
+                        2019</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/r4lvP4Lvld4?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 5-->
+    <div class="modal fade" id="exampleModals5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals5Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals5Label">Лiсова пiсня Персонажi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ta-wOnKMgc0?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 6-->
+    <div class="modal fade" id="exampleModals6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals6Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals6Label">Перша україномовна вистава за 90 років: "Барвінок -
+                        наш герой" у театрі драми та комедії</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/aibSCNUvXhE?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Video modal 7-->
+    <div class="modal fade" id="exampleModals7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals7Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals7Label">ФАРШ середньовічні французькі фарси | ДРАМіКОМ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bM2WzyG96YI?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 8-->
+    <div class="modal fade" id="exampleModals8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals8Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals8Label">Новий мюзикл у Дніпровському театрі опери та балету
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wlt8yHo26C8?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 9-->
+    <div class="modal fade" id="exampleModals9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals9Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals9Label">"Красавица и Чудовище". Днипро Опера</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Eg_zZB5nnvo?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 10-->
+    <div class="modal fade" id="exampleModals10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals10Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals10Label">Мюзикл “Красуня та чудовисько” готуються
+                        представити в Дніпропетровському оперному театрі</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wuDVt6Hro4I?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Video modal 11-->
+    <div class="modal fade" id="exampleModals11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals11Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals11Label">Театр. Як це працює? | СПЕЦПРОЄКТ. Дніпровський
+                        академічний театр драми і комедії</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/REgN2CJrC78?controls=2&rel=0&modestbranding=1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Video modal 12-->
+    <div class="modal fade" id="exampleModals12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModals12Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModals12Label">
+                        Щоденник негідника - гостра комедія</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/wZMSNEXG0aA?controls=2&rel=0&modestbranding=1" title="YouTube video player" 
+                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                         allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CALL BACK FORM-->
+
+        <form class="col g-3 container w-50 border callback-form" style="border-color:#3B4E4F!important;">
+            <p class="fs-2 text-white text-center">Зв'язок зі мною</p>
+            <div class="col m-1 bg-white">
+            <label for="staticEmail" class="visually-hidden ">Email</label>
+            <input type="text" readonly class="form-control-plaintext b-4" id="staticEmail" value="email@example.com">
+            </div>
+            <div class="col m-1">
+            <label for="inputName" class="visually-hidden">Name</label>
+            <input type="name" class="form-control" id="inputName" placeholder="Name">
+            </div>
+            <div class="col m-1">
+                <label for="inputPhone" class="visually-hidden">Phone</label>
+                <input type="phone" class="form-control" id="inputPhone" placeholder="+380 (..).......">
+            </div>
+            
+            <div class="col m-1">
+            <button type="submit" class="btn btn-primary mb-3">отправить</button>
+            </div>
+        </form>
     
-       (function() {
-            
-        var $main_info = $('.main-info');
-			// Move transient paragraph to the right column when viewport width > 800px
-			$main_info.responsiveDom({
-				before: '.my-photo',
-				mediaQuery: 'screen and (max-width: 660px)',
-				});
 
-			// Let our CSS know the JS is done
-            $main_info.addClass('js-complete');
+    <!--CONTACS INFORM-->
 
-            var $sidebar_container = $(".sidebar-container");
-            
-            $sidebar_container.responsiveDom({
-				before: '.about-me-move-down',
-				mediaQuery: 'screen and (max-width: 660px)',
-				});
+    <footer class="container bg-3 border-top border-3 mt-3 mb-3" style="border-color: #3B4E4F!important;" id="contacts-inform">
+        <div class="footer-top ">
+            <div class="container">
+                <div class="row">
+                    <div class="col lg-3 col md-6">
+                        <div class="footer-info text-center">
+                            <h3 class="text-center text-black fs-2">SVITLANA_TSYVANONOK</h3>
+                            <p class="text-center text-black fs-4">
+                                <strong>Phone:</strong>+380 (67) 6363217 <br>
+                                <strong>Email:</strong>ugovas87@gmail.com <br>
+                            </p>
+                            <div class="social-links mt-3 mb-3">
+                                <a href="mailto:ugovas87@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="36"
+                                        height="36" fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16" style="color: #3B4E4F">
+                                        <path
+                                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                        <path
+                                            d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z" />
+                                    </svg></a>
 
-          
-            
-            $sidebar_container.addClass('js-complete');
+                                <a href="https://t.me/Svetlana_Ugova"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" style="color: #3B4E4F"
+                                        fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                                    </svg></a>
 
-           
-        })();
-    </script>
+
+                                <a href="tel:+380676363217"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" style="color: #3B4E4F"
+                                        fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                    </svg></a>
+                                <!--
+                                <a href="http://m.me/<PAGE_NAME>"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" style="color: #3B4E4F"
+                                        fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
+                                    </svg></a>
+
+                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" style="color: #3B4E4F"
+                                        fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                    </svg></a>
+                                -->    
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                <div class="col lg-3 md-6 footer-links">
+                    <h4>Usefull links</h4>
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                          </svg></li>
+                    </ul>
+
+                </div>
+                -->
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!--for smartphone/tablet-->
+
+
+
+
+    <!-- Modal Request recived  -->
+    <div class="modal modal-area-bgd modal-request-recived" id="request-recived">
+
+        <div class="request-recived-container">
+            <i class="fas fa-times modal-close-btn"></i>
+            <h3 class="request-recived-title">{дякую}</h3>
+            <p class="request-recived-main-msg">ви залишили свої контакти </p>
+            <p class="request-recived-secondary-msg">до швидкого зв'язку=)</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/callback-form.js"></script>
+    <!--    
+    <script src="js/choices.min.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/project-modals.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/callback-form.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/animation-on-scroll.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/sliders.js"></script>
+    -->
+</body>
 
 </html>

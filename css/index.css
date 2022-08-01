@@ -1,0 +1,16 @@
+
+.my-btn{
+    background-color: unset!important;
+    border-color: #3B4E4F!important;
+}
+.my-btn:hover{
+    color:  #A4D8DB!important;
+    border-color: #A4D8DB!important;
+}
+.modal-content{
+    background-color: #A4D8DB!important;
+}
+.carousel-indicators button{
+    background: linear-gradient(#3B4E4F, #A4D8DB);            
+   
+}
