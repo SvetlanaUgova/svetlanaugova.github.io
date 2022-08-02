@@ -1,7 +1,7 @@
 const callbackFrom = document.querySelector(".callback-form");
 const callbackRequestRecived = document.querySelector("#request-recived");
 const userName = document.querySelector("#inputName");
-const userEmail = document.querySelector("#staticEmail");
+const userEmail = document.querySelector("#email");
 const userPhone = document.querySelector("#inputPhone");
 
 userPhone.addEventListener(
