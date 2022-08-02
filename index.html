@@ -2351,9 +2351,8 @@
             </div>
             
             <div class="col m-1">
-            <button type="button" class="btn btn-primary mb-3"  data-bs-toggle="modal" data-bs-target="#modalFormControlSuccess">
+            <button type="submit" class="btn btn-primary mb-3"  >
                 отправить
-
             </button>
             
             </div>
@@ -2366,12 +2365,12 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="modalFormControlSuccessLabel">Title</h5>
+                    <h5 class="modal-title" id="modalFormControlSuccessLabel">Дякую, зворотній зв'язок є </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
-                <div class="modal-body">
-                    ....
+                <div class="modal-body bg-dark">
+                    <p class="fs-4 text-white">Скоро я зв'яжусь з вами</p>
                 </div>
 
                 <div class="modal-footer">
@@ -2383,6 +2382,26 @@
         </div>
         
     </div>
+
+        <!--Modal Error-->
+        <div class="modal fade" id="callback-form-input-error" tabindex="-1" aria-labelledby="callback-form-input-errorLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-titile" id="callback-form-input-errorLabel">error</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        ....
+                    </div>
+    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close </button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
