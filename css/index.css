@@ -14,3 +14,7 @@
     background: linear-gradient(#3B4E4F, #A4D8DB);            
    
 }
+.callback-form-input-error{
+    border-color: #da6565!important;
+    color:  #da6565!important;
+}
